@@ -1,0 +1,14 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Home Page</title>
+  </head>
+  <body>
+    <h1>Welcome to the Crypto Chatbot!</h1>
+    <form action="{{ url_for('chatbot') }}" method="POST">
+      <label for="question">Ask a question:</label>
+      <input type="text" id="question" name="question" required>
+      <button type="submit">Ask</button>
+    </form>
+  </body>
+</html>
